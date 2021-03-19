@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: black;
+    /* background-image: url(https://media.npr.org/assets/img/2020/08/27/nasa-goods-real_wide-9168d715c2d4c488d7a0e594b397d7abdd969d9d.png);
+    background-repeat: repeat; */
+    
+}
+
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+a{
+    color: white;
+}
+/* Add Fixed up arrow */
+#back{
+    color: teal;
+}
+
+.getback{
+    position: fixed;
+    margin-right: 20px;
+    height: 10px;
+    background-color: black;
+    width: 20px;
+    z-index: 10;
+    color: teal;
+}
+
+/* First Portion of Page */
+.whole{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#boutit:hover{
+    animation-name: Move;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    position: relative;
+    /* opacity: .6; */
+    color: teal;
+}
+
+#pros:hover{
+    animation-name: Move;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    position: relative;
+    /* opacity: .6; */
+    color: teal;
+}
+
+#ayee:hover{
+    animation-name: Move;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    position: relative;
+    /* opacity: .6; */
+    color: teal;
+
+}
+
+@keyframes Move{
+    from{left: 0px;}
+    to{left: 90px;}
+}
+
+@-webkit-keyframes Move{
+    from{left: 90px;}
+    to{left: 0px;}
+}
+
+.first{
+    background-color: black;
+    height: 100vh;
+    width: 50%;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.second{
+    background-image: url(./mee4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 50%;
+}
+
+.head{
+    font-size: 5rem;
+    align-self: start;
+    margin-left: 0;
+}
+
+.nav{
+    margin-left: 0;
+}
+
+#name{
+    color: teal;
+}
+
+/* about */
+.about{
+    background-color: black;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+#about{
+    margin-top: 100vh;
+    margin-bottom: 10px;
+    color: teal;
+    font-size: 5rem;
+    margin-left: 530px;
+}
+.aboutinfo{
+    color: white;
+    background-color: black;
+    margin-left: 200px;
+    margin-right: 200px;
+    /* font-size: 2rem; */
+    font-family: sans-serif;
+}
+
+img{
+    height: 200px;
+    width: 1000px;
+    margin-left: 250px;
+}
+
+#firstabout{
+    margin-left: 95px;
+    font-size: 20px;
+}
+
+#resume{
+    color: teal;
+}
+
+.resume{
+    margin-left: 480px;
+}
+
+/* Projects */
+
+.proj{
+    margin-top: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: black;
+    
+}
+
+.both{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#header{
+    color: teal;
+    font-size: 5rem;
+}
+
+#form{
+    height: 350px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: teal 1px solid;
+    margin-top:20px;
+}
+
+#form:hover{
+    opacity: .5;
+}
+
+#clock:hover{
+    opacity: .5;
+}
+
+#clock:hover #text2{
+    opacity: 1;
+}
+
+#text2{
+    opacity: 0;
+}
+
+#clock{
+    height: 350px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    border: teal 1px solid;
+}
+
+/* Contact Me */
+#twitter{
+    height: 200px;
+    width: 200px;
+}
+
+#github{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+#linkedin{
+    height: 200px;
+    width: 200px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+    margin-right: 200px;
+    margin-top: 100px;
+}
+
+.contact{
+    margin-top: 100vh;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    /* padding-right: 10px; */
+}
+
+#getat{
+    font-size: 3rem;
+    margin-left: 60px;
+}
+
+#comeback{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.move{
+    position: fixed;
+    color: teal;
+    height: 5px;
+    margin-left: 1450px;
+    margin-top: 580px;
+}
+
+#back{
+    color: teal;
+}
