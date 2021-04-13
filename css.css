@@ -3,10 +3,13 @@
     border: none;
     box-sizing: border-box;
     padding: 0;
+    /* background-image: url(./cityhall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
     background-color: black;
-    /* background-image: url(https://media.npr.org/assets/img/2020/08/27/nasa-goods-real_wide-9168d715c2d4c488d7a0e594b397d7abdd969d9d.png);
-    background-repeat: repeat; */
-    
+    font-family: sans-serif;
+    scroll-behavior:smooth;
+
 }
 
 a:link{
@@ -24,6 +27,12 @@ a:active{
 a{
     color: white;
 }
+/* Hopefully things don't completely cover this */
+.background{
+    display: flex;
+    flex-direction:column;
+}
+
 /* Add Fixed up arrow */
 #back{
     color: teal;
@@ -31,7 +40,9 @@ a{
 
 .getback{
     position: fixed;
-    margin-right: 20px;
+    align-self: flex-end;
+    margin-right: 2rem;
+    margin-top: 90vh;
     height: 10px;
     background-color: black;
     width: 20px;
@@ -47,45 +58,59 @@ a{
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-bottom: 20px;
 }
 
 #boutit:hover{
-    animation-name: Move;
-    animation-duration: 1s;
+    /* animation-name: Move;
+    animation-duration: 3s;
     animation-iteration-count: 1;
     position: relative;
+    -webkit-animation-duration: 2s; */
     /* opacity: .6; */
     color: teal;
+    margin-left: 90px;
 }
 
 #pros:hover{
-    animation-name: Move;
-    animation-duration: 1s;
+    /* animation-name: Move;
+    animation-duration: 3s;
     animation-iteration-count: 1;
-    position: relative;
+    -webkit-animation-duration: 2s;
+    transition:2s;
+    position: relative; */
     /* opacity: .6; */
     color: teal;
+    margin-left: 90px;
 }
 
 #ayee:hover{
-    animation-name: Move;
+    /* animation-name: Move;
     animation-duration: 1s;
+    -o-animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
-    position: relative;
+    position: relative; */
     /* opacity: .6; */
     color: teal;
+    margin-left: 90px;
 
 }
 
-@keyframes Move{
-    from{left: 0px;}
-    to{left: 90px;}
+#ayee{
+    margin-left: 0px;
+    transition: 2s;
 }
 
-@-webkit-keyframes Move{
-    from{left: 90px;}
-    to{left: 0px;}
+#pros{
+    margin-left: 0px;
+    transition: 2s;
 }
+
+#boutit{
+    margin-left: 0px;
+    transition: 2s;
+}
+
 
 .first{
     background-color: black;
@@ -100,7 +125,7 @@ a{
 }
 
 .second{
-    background-image: url(./mee4.png);
+    background-image: url(./PortfolioPic.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -119,166 +144,305 @@ a{
 
 #name{
     color: teal;
+    font-family: sans-serif;
 }
+
+/* Save Everything from here up */
 
 /* about */
 .about{
     background-color: black;
-    /* display: flex;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
 }
+
 #about{
-    margin-top: 100vh;
-    margin-bottom: 10px;
     color: teal;
     font-size: 5rem;
-    margin-left: 530px;
+    margin-bottom: 120px;
+    z-index: 10;
 }
+
 .aboutinfo{
-    color: white;
-    background-color: black;
-    margin-left: 200px;
-    margin-right: 200px;
-    /* font-size: 2rem; */
+    color: black;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.me{
+    background: black;
+    display: flex;
+    margin-top: 910px;
+    margin-bottom: 50px;
+    width: 100%;
     font-family: sans-serif;
 }
 
-img{
-    height: 200px;
-    width: 800px;
-    margin-left: 1000px;
+/* HALP THE BACKGROUND CHANGED COLOR */
+.fir{
+    align-self: flex-end;
+    font-size: 2rem;
+    /* height: 130px; */
+    width: 900px;
+    margin-bottom: 180px;
+    background-color: black;
+    margin-left: -80px;
+    color: teal;
+    font-family: sans-serif;
+    opacity: 0.7;
+    /* NOT WORKING RIGHT */
+    /* border: white 1px solid; */
+    /* border-radius: 20px; */
 }
 
-#firstabout{
-    margin-left: 95px;
-    font-size: 20px;
+#namee{
+    color: white;
+    display: inline;
+    background-color: black;
+}
+
+.white{
+    background-color: white;
+    height: 50px;
+    width: 500px;
+    margin-top: -20px;
+    margin-left: -1390px;
+}
+
+#meuh{
+    align-self: flex-start;
+    height: 500px;
+    width: 30%;
+    border: teal 2px solid;
+    /* border-radius: 10px; */
+    /* margin-top: 350px; */
+}
+
+/* second part to about me */
+.introall{
+    display: flex;
+    background: black;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.intro{
+    align-self: flex-start;
+    /* border: white 1px solid; */
+    width: 1200px;
+    margin-right: -200px;
+    /* margin-bottom: -900px; */
+    margin-top: 200px;
+    color: white;
+    font-size: 2rem;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.teal{
+    height: 100px;
+    width: 700px;
+    background-color: teal;
+    margin-left:-400px;
+    margin-top: 60px;
+}
+
+#bills{
+    align-self: flex-end;
+    height: 120vh;
+    width: 60%;
+    margin-right: 1px;
+    border: teal 2px solid;
+
+}
+
+#buffalo{
+    color: teal;
+    display: inline;
+    font-weight: bold;
+}
+
+/* 3rd Part of AboutMe */
+
+.artall{
+    display: flex;
+    background: black;
+    color: white;
+}
+
+.art{
+    align-self: flex-end;
+    width: 60%;
+    font-size: 1.7rem;
+    margin-bottom: 100px;
+    margin-left: -120px;
+    opacity: .65;
+    color: white;
+}
+
+#sheas{
+    align-self: flex-start;
+    height: 120vh;
+    width: 50%;
+    border: teal 2px solid;
 }
 
 #resume{
-    color: teal;
+    color: white;
 }
 
 .resume{
-    margin-left: 480px;
+    position: absolute;
+    margin-top: -680px;
+    z-index: 10;
 }
 
 /* Projects */
-
-.proj{
-    margin-top: 100vh;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    background-color: black;
-    
-}
-
-.both{
+.projects{
+    height: 120vh;
     width: 100%;
+    margin-top: 1150px;
+    margin-right: 1000px;
+    background-image: url(./blodasit.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
 }
 
-#header{
+.headerr{
+    color: white;
+    font-size: 3rem;
+    background: transparent;
+    font-family: sans-serif;
+    text-shadow: black;
+}
+
+h1{
+    background: transparent;
+}
+
+.container{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+
+.clock{
+    height: 20rem;
+    width: 30rem;
+    background-color: black;
+    border: 3px white solid;
+    margin-right: 10rem;
     color: teal;
-    font-size: 5rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#form{
-    height: 350px;
-    width: 500px;
+.cntpage{
+    height: 20rem;
+    width: 30rem;
+    background-color: black;
+    border: 3px white solid;
+    color: teal;
+    font-size: 2rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    border: teal 1px solid;
-    margin-top:20px;
 }
 
-#form:hover{
-    opacity: .5;
+h2{
+    background: transparent;
 }
 
-#clock:hover{
-    opacity: .5;
+a{
+    background: transparent;
 }
 
-#clock:hover #text2{
-    opacity: 1;
+.clock:hover{
+    background-image: url(./clock.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
 
-#text2{
-    opacity: 0;
-}
-
-#clock{
-    height: 350px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 50px;
-    border: teal 1px solid;
+.cntpage:hover{
+    background-image: url(./form.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
 
 /* Contact Me */
 #twitter{
-    height: 200px;
-    width: 200px;
+    height: 50px;
+    width: 50px;
+    margin-right: 2rem;
 }
 
 #github{
-    height: 200px;
-    width: 200px;
+    height: 50px;
+    width: 50px;
     border-radius: 20px;
+    margin-right: 2rem;
 }
 
 #linkedin{
-    height: 200px;
-    width: 200px;
+    height: 50px;
+    width: 50px;
 }
 
 .icons{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 10vh;
     width: 100%;
-    margin-right: 200px;
-    margin-top: 100px;
+    margin-right: 1px;
+    margin-top: 20px;
 }
 
 .contact{
-    margin-top: 100vh;
+    margin-top: 20px;
     color: white;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
+    margin-bottom: -5000px;
     flex-direction: column;
     /* padding-right: 10px; */
 }
 
 #getat{
-    font-size: 3rem;
-    margin-left: 60px;
+    font-size: 2rem;
 }
 
 #comeback{
-    font-size: 4rem;
+    font-size: 1rem;
     font-weight: bold;
-    margin-top: 50px;
-    margin-left: 70px;
+    margin-top: 10px;
 }
 
 .move{
